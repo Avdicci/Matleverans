@@ -1,0 +1,237 @@
+body {
+  background-color: #500000;
+  font-family: "Joti One", "arial";
+  margin: 0;
+  padding: 0;
+  background-image: "images/BG.png";
+  background-attachment: scroll;
+}
+
+nav {
+  background-color: #400000;
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+nav li {
+  margin-right: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 15px 35px;
+  font-size: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+nav a:hover {
+  background-color: #700000;
+  border-color: #700000;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+.image-container img {
+  border-radius: 50%;
+}
+
+.additional-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
+  margin-top: 3%; /* Adjust margin as needed */
+}
+
+.image-with-text img {
+  width: 30%; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 2%; /* Adjust margin as needed */
+}
+
+.image-with-text p {
+  font-size: x-large; /* Adjust font size as needed */
+}
+
+@media screen and (max-width: 1300px) {
+  .image-with-text p {
+    font-size: large; /* Adjust font size as needed */
+  }
+}
+.order-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6%;
+  text-decoration: none;
+}
+
+.order-item {
+  height: 10%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.order-item img {
+  width: 100%; /* Adjust image width as needed */
+  height: auto;
+  margin-right: 10%; /* Adjust margin as needed */
+  border-radius: 40%;
+}
+
+.order-info p {
+  margin: 0; /* Remove default margins */
+}
+
+/* Style for the little div with a p tag */
+.order-info {
+  background-color: #800000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#pdark {
+  font-size: xx-large;
+  margin-left: 10%;
+  background-color: #700000;
+  border-radius: 20%;
+}
+
+img:hover {
+  border-bottom: 2px solid white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+  margin-left: 300px;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+}
+.circle-container img {
+  border-radius: 60%;
+  width: 300px;
+  height: 300px;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.margin-right {
+  margin-right: 300px;
+  justify-self: end;
+}
+
+.mirrored .text {
+  margin-right: 20px;
+}
+
+#anime {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.01);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+iframe {
+  width: 28%;
+  border-radius: 5%;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100vh; /* Set the height of the container to 100% of the viewport height */
+  color: white;
+}
+
+form {
+  width: 80%; /* Adjust the width of the form as needed */
+  max-width: 400px; /* Set a maximum width for the form */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Adjust margin between form groups */
+}
+
+label {
+  display: block; /* Ensure labels are on their own line */
+  margin-bottom: 5px; /* Add spacing below labels */
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

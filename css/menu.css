@@ -1,0 +1,69 @@
+body {
+  background-color: #500000;
+  font-family: "Joti One", "arial";
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #400000;
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+nav li {
+  margin-right: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 15px 35px;
+  font-size: 20px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+nav a:hover {
+  background-color: #700000;
+  border-color: #700000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+  margin-top: 50px;
+  margin-left: 300px;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+}
+.circle-container img {
+  border-radius: 60%;
+  width: 300px;
+  height: 300px;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.margin-right {
+  margin-right: 300px;
+  justify-self: end;
+}
+
+.mirrored .text {
+  margin-right: 20px;
+}
